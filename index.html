@@ -8,6 +8,7 @@
 
     <!-- unicon (icon) -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
     <!-- main css  -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -70,19 +71,186 @@
 
         <!-- home -->
         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/bryanrinaldoo/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/bryanrinaldoo" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
 
+                        <svg class="home__blob" id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                            <defs>
+                                <clipPath id="blob">
+                                    <path fill="#474bff" d="M399,326Q339,412,253,389Q167,366,86.5,303Q6,240,69.5,147.5Q133,55,238.5,57.5Q344,60,401.5,150Q459,240,399,326Z" />
+                                </clipPath>
+                            </defs>
+                            <image  x="0" y="0" width="100%" height="100%" clip-path="url(#blob)" xlink:href="assets/img/bryan.jpg" preserveAspectRatio="xMidYMid slice"></image>
+                        </svg>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I am Bryan</h1>
+                        <h3 class="home__subtitle">Front-End Developer <span class="text-pink">in progress</span> </h3>
+                        <p class="home__description">Right now I'm learning about Front-End and hoping to become a
+                            full-time web developer</p>
+                        <a href="#contact" class="button button-flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button-flex">
+                        <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down"></i>
+                    </a>
+
+                </div>
+            </div>
         </section>
 
         <!-- about  -->
         <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
 
+            <div class="about__container container grid">
+                <img src="assets/img/celine.jpg" alt="" class="about__img">
 
+                <div class="about__data">
+                    <p class="about__description">A student at Bandung Institute of Technology majoring in informatics engineering. </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">2+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">5+</span>
+                            <span class="about__info-name">Completed <br> project</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="about__buttons">
+                        <a href="https://www.linkedin.com/in/bryanrinaldoo/" target="_blank" class="button button-flex">
+                            Ask for CV<i class="uil uil-chat-bubble-user button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- skills  -->
         <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My knowledge</span>
 
+            <div class="skills__container container grid">
+                <div>
 
+                    <!-- basic  -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="fas fa-code skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Basic</h1>
+                                <span class="skills__subtitle">I'm new to these</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="uil uil-database"></i>MySQL </h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="fab fa-php"></i>PHP </h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="uil uil-cube"></i>C/C++ </h3> 
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="far fa-window-maximize"></i>C# </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- intermediate -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-terminal skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Intermediate</h1>
+                                <span class="skills__subtitle">I'm familiar with these</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="uil uil-github"></i>Git </h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="fab fa-java"></i>Java </h3>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- advanced -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-cubes skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Advanced</h1>
+                                <span class="skills__subtitle">I use it frequently</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="fab fa-python"></i>Python </h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="fab fa-html5"></i>HTML </h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="fab fa-css3-alt"></i>CSS </h3> 
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class="fab fa-js-square"></i>JavaScript </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- qualification  -->
