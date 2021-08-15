@@ -4,13 +4,13 @@
 :root {
     --header-height: 48px;
 
-    --hue-color: 340; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 91; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%) ;
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --first-color: hsl(var(--hue-color), 50%, 43%);
+    --first-color-second: hsl(var(--hue-color), 50%, 43%) ;
+    --first-color-alt: hsl(var(--hue-color), 62%, 43%);
+    --first-color-lighter: hsl(var(--hue-color), 65%, 60%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -438,4 +438,181 @@ img{
     transform: rotate(-180deg);
 }
 
+
+/* FOOTER  */
+
+.footer-area .footer {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper .icon {
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper .icon span i {
+    line-height: 60px;
+    font-size: 25px;
+}
+
+.wrapper .icon:hover span i {
+    color: white;
+}
+
+.wrapper .icon span {
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: rgb(241, 241, 241);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    margin-right: 50px;
+}
+
+.wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: rgb(241, 241, 241);
+    color: white;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin-right: 50px;
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: rgb(241, 241, 241);
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+}
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #3b5999;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #46c1f6;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #e1306c;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333;
+}
+
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #0e76a8 
+}
+
+.footer-area {
+    padding: 50px 0;
+    padding-bottom: 20px;
+    position: relative;
+    background: var(--first-color);
+}
+
+.footer-area h4 {
+    text-align: center;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+    margin-top: 20px;
+}
+.footer-area h1 {
+    margin-bottom: 70px;
+}
+
+.warna {
+    padding: 100px 0;
+    padding-bottom: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 770px) {
+
+    .wrapper .icon span {
+        margin-right: 10px;
+    }
+
+    .wrapper .icon .tooltip {
+        margin-right: 10px;
+    }
+
+    .footer-area h1 {
+        margin-bottom: 55px;
+    }
+}
+@media (max-width: 566px) {
+
+    .wrapper .icon span {
+        margin-right: 0px;
+    }
+
+    .wrapper .icon .tooltip {
+        margin-right: 0px;
+    }
+
+    .footer-area h1 {
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 518px) {
+    .wrapper .icon span {
+        margin: 15px;
+    }
+
+    .wrapper .icon .tooltip {
+        margin: 25px;
+    }
+}
 /* end  */
